@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 500px;
+    height:500px;
+    background-color: aquamarine;
+    margin: 50px auto;
+}
+button{
+    padding: 20px 30px;
+    margin: auto 20px;
+}
+.allbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input{
+    padding: 10px;
+    font-size: 10px;
+    width: 15%;
+    margin: 20px auto;
+    display: block;
+    
+}
