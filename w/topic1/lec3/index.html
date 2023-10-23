@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec-3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="btns">
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="slide">slide up</button>
+    <button id="slide1">slide Down</button>
+    <button id="css3">Change Css</button>
+</div>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".box").click(function(){
+                $(this).toggleClass('newbox');
+            })
+            $("#show").click(function(){
+                $('.box').fadeIn(500);
+            })
+            $("#hide").click(function(){
+                $('.box').fadeOut(500);
+            })
+            $("#slide").click(function(){
+                $('.box').slideUp(1000);
+            })
+            $("#slide1").click(function(){
+                $('.box').slideDown(1000);
+            })
+            $("#css3").click(function(){
+                $('.box').css("background-color","blue");
+                $('.box').css("border","8px dotted green");
+            })
+            $("#css3").dblclick(function(){
+                $('.box').css("background-color","chocolate");
+                $('.box').css("border","none");
+            })
+        })
+    </script>
+</html>
