@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-body{
+    width: 85%;
+    margin: 50px auto;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.info-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+}
+.cards{
+    
+    width: 50%;
+    font-size: 25px;
+    margin: 50px auto;
+}
+.slick-dots li button:before
+{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: green;
+    
+}
+.slick-dots li.slick-active button:before 
+{
+    box-sizing: border-box;
+    height: 11px;
+    width: 11px;
+    background-color: transparent;
+    border: 2px solid green;
+}
+.slick-list .slick-arrow{
+  
+    background-color: black;
+
+}
+.slick-dots{
+   text-align: left;
+   bottom: -50px;
+}
+.slick-arrow{
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+
+
